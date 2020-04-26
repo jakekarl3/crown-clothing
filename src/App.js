@@ -31,9 +31,7 @@ class App extends React.Component {
               id: snapShop.id,
               ...snapShop.data()
             }
-          })
-
-          console.log(this.state);
+          });
         });
       } else {
         this.setState({currentUser: userAuth});
