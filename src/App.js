@@ -16,7 +16,10 @@ import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 
 // FIREBASE
-import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import {
+  auth, 
+  createUserProfileDocument
+ } from './firebase/firebase.utils';
 
 // REDUX
 import { setCurrentUser } from './redux/user/user.actions';
@@ -39,9 +42,9 @@ class App extends React.Component {
             ...snapShop.data()
           });
         });
-      } else {
-        setCurrentUser(userAuth);
       }
+
+      setCurrentUser(userAuth);
     });
   }
 
