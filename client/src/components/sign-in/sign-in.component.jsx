@@ -10,7 +10,7 @@ import {
   SignInContainer,
   SignInTitle,
   ButtonsContainer
-} from './menu-item.styles';
+} from './sign-in.styles';
 
 const SignIn = ({ emailSignInStart, googleSignInStart }) => {
   const [userCredentials, setCredentials ] = useState({ email: '',  password: '' });
